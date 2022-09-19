@@ -3,4 +3,3 @@ selenium==4.4.3
 requests==2.28.1
 pytest-xdist==2.5.0
 allure-pytest==2.10.0
-qwer
