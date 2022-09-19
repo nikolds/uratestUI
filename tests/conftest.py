@@ -29,3 +29,4 @@ def setup(request, get_webdriver):
     driver.get(url)
     yield driver
     driver.close()  # закрывает вкладку. для закрытия всего окна driver.quite()
+aa
