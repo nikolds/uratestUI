@@ -1,3 +1,5 @@
+
+import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as chrome_options
@@ -8,7 +10,7 @@ def get_chrome_options():
     options = chrome_options()
     options.add_argument('chrome')  # headless если не нужно отображение
     options.add_argument('--start-maximized')
-    options.add_argument('--window-size=800,600')
+    options.add_argument('--window-size=1920,1080')
     return options
 
 
@@ -29,4 +31,5 @@ def setup(request, get_webdriver):
     driver.get(url)
     yield driver
     driver.close()  # закрывает вкладку. для закрытия всего окна driver.quite()
-aa
+
+
